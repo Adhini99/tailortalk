@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tailortalk-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /credentials/service_account.json
+    staticPublishPath: ""
+    plan: free

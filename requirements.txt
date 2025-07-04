@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+streamlit
+google-api-python-client
+google-auth
+langchain
+langchain-community
+langchain-groq
+requests
+pydantic
+python-dotenv
+dateparser
